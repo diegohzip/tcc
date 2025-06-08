@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+a {
+    text-decoration: none;
+  }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* cabecalho */
+
+.cabecalho {
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  padding: 20px 0;
+}
+
+.cabecalho .conteudo-cabecalho {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #d00000;
+}
+
+#areaUsuario {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #d00000;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 2px solid #d00000;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  user-select: none;
+  text-decoration: none;
+}
+
+#areaUsuario:hover {
+  background-color: #d00000;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(208, 0, 0, 0.3);
+}
+
+
+/* resto */
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #d00000;
+}
+
+/* Barra de progresso */
+.progress-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #d00000;
+  border-radius: 25px 0 0 25px;
+  transition: width 0.4s ease;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Transição suave para perguntas */
+.pergunta {
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+select, button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #d00000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a70000;
+}
+
+.resultado {
+  margin-top: 30px;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.resultado h2 {
+  color: #d00000;
+  margin-bottom: 10px;
+}
+
+.resultado ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-bottom: 20px;
+}
+
+.ficha-carousel {
+  margin-top: 30px;
+  overflow-x: auto;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.ficha-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.ficha-day-card {
+  min-width: 300px;
+  flex-shrink: 0;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ficha-day-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #e30613;
+}
+
+.ficha-day-card ul {
+  padding-left: 18px;
+}
+
+.exercicio-btn {
+  background-color: transparent;
+  border: none;
+  color: #d00000;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-conteudo {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.popup-conteudo button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #d00000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-descricao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-descricao.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.fechar-popup {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Container geral da ficha */
+.ficha-carousel {
+  margin-top: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* Cards da ficha de treino */
+.ficha-card {
+  background-color: #f9f9f9;
+  border: 1.5px solid #d00000; /* vermelho profissional */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 40px;
+  margin-bottom: 30px; /* Espaçamento entre cards */
+  box-sizing: border-box;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.ficha-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Título do dia */
+.ficha-card h3 {
+  margin-bottom: 15px;
+  color: #e30613;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #d00000;
+  padding-bottom: 5px;
+}
+
+/* Lista de exercícios */
+.ficha-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Itens da lista (exercícios) */
+.ficha-card ul li {
+  background-color: #ffe6e6;
+  margin-bottom: 12px; /* Espaçamento entre exercícios */
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #d00000;
+  border: 1px solid #ff3737;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Efeito hover para melhor interatividade */
+.ficha-card ul li:hover {
+  background-color: #ffcccc;
+  color: #e30613;
+  border-color: #d00000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.popup-content input[type="text"].video-link {
+  font-size: 14px;
+  background-color: #f9f9f9;
+  border: 1.5px solid #ccc;
+  border-radius: 25px;
+  padding: 8px 12px;
+  width: calc(100% - 24px);
+  margin-top: 10px;
+  outline: none;
+  background-image: url('https://img.icons8.com/ios-filled/20/000000/youtube-play.png');
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  padding-left: 35px;
+  background-size: 20px;
+  cursor: pointer;
+}
+
+/* seta */
+
+.ficha-card ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.exercicio-nome {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flecha-direita {
+  width: 16px;
+  height: auto;
+  margin-left: 12px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Treino Personalizada</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="conteudo-cabecalho">
+      <div class="logo">Nexus Training</div>
+      <div id="areaUsuario"></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Barra de Progresso -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <h1>Monte sua Ficha de Treino</h1>
+    <form id="formulario">
+      
+      <div class="pergunta" id="pergunta1">
+        <label>1. Gênero:</label>
+        <select id="genero" required>
+          <option value="">Selecione</option>
+          <option value="homem">Homem</option>
+          <option value="mulher">Mulher</option>
+        </select>
+      </div>
+
+      <div class="pergunta" id="pergunta2" style="display: none;">
+        <label>2. Nível de experiência:</label>
+        <select id="experiencia" required>
+          <option value="">Selecione</option>
+          <option value="iniciante">Iniciante</option>
+          <option value="intermediario">Intermediário</option>
+          <option value="avancado">Avançado</option>
+        </select>
+      </div>
+
+      <div class="pergunta" id="pergunta3" style="display: none;">
+        <label>3. Condição física:</label>
+        <select id="condicao" required>
+          <option value="">Selecione</option>
+          <option value="boa">Boa</option>
+          <option value="mediana">Mediana</option>
+          <option value="ruim">Ruim</option>
+        </select>
+      </div>
+
+      <div class="pergunta" id="pergunta4" style="display: none;">
+        <label>4. Possui lesão?</label>
+        <select id="lesao" required>
+          <option value="">Selecione</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </div>
+
+      <div class="pergunta" id="pergunta5" style="display: none;">
+        <label>5. Dias disponíveis para treino:</label>
+        <select id="dias" required>
+          <option value="">Selecione</option>
+          <option value="2">2 dias</option>
+          <option value="3">3 dias</option>
+          <option value="4">4 dias</option>
+          <option value="5">5 dias</option>
+          <option value="6">6 dias</option>
+        </select>
+      </div>
+
+      <div class="pergunta" id="pergunta6" style="display: none;">
+        <label>6. Tem acesso à academia?</label>
+        <select id="academia" required>
+          <option value="">Selecione</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </div>
+
+      <div id="submitBtn" style="display: none;">
+        <button type="submit">Gerar Ficha</button>
+      </div>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+
+    <!-- Cards deslizáveis da ficha de treino -->
+    <div id="ficha-container" class="ficha-carousel hidden">
+      <div id="ficha-cards" class="ficha-cards"></div>
+    </div>
+
+  </div>
+
+  <!-- Pop-up da descrição -->
+<div id="popupDescricao" class="popup-descricao">
+  <div class="popup-content">
+    <span id="fecharPopup" class="fechar-popup">&times;</span>
+    <p id="descricaoTexto"></p>
+  </div>
+</div>
+
+<!-- Pop-up do perfil -->
+
+<div id="popupPerfil" class="popup-descricao">
+  <div class="popup-content">
+    <span id="fecharPopupPerfil" class="fechar-popup">&times;</span>
+    <p id="dadosUsuario">Carregando dados do perfil...</p>
+  </div>
+</div>
+
+  <script src="fichas.js"></script>
+  <script src="logica.js"></script>
+</body>
+</html>
