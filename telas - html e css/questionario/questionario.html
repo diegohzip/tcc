@@ -44,13 +44,16 @@
       </div>
 
       <div class="pergunta" id="pergunta3" style="display: none;">
-        <label>3. Condição física:</label>
-        <select id="condicao" required>
-          <option value="">Selecione</option>
-          <option value="boa">Boa</option>
-          <option value="mediana">Mediana</option>
-          <option value="ruim">Ruim</option>
-        </select>
+        <div class="linha-condicao">
+          <label for="condicao">3. Condição física:</label>
+            <select id="condicao" required>
+              <option value="">Selecione</option>
+              <option value="boa">Boa</option>
+              <option value="mediana">Mediana</option>
+              <option value="ruim">Ruim</option>
+            </select>
+            <button type="button" id="abrirCalculadoraIMC" class="btn-imc">Calcular IMC</button>
+        </div>
       </div>
 
       <div class="pergunta" id="pergunta4" style="display: none;">
@@ -97,6 +100,36 @@
 
   </div>
 
+    <footer class="rodape">
+  <div class="rodape-conteudo">
+    <div class="coluna-rodape">
+      <h3>Navegação</h3>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="questionario.html">Questionário</a></li>
+        <li><a href="../login/login.html">Login</a></li>
+        <li><a href="#">Perguntas Frequentes</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Informações</h3>
+      <ul>
+        <li><a href="#">Sobre o Projeto</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Nexus Training</h3>
+      <p>Seu sistema inteligente de fichas de treino personalizadas.</p>
+      <p>&copy; 2025 Nexus Training. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
   <!-- Pop-up da descrição -->
 <div id="popupDescricao" class="popup-descricao">
   <div class="popup-content">
@@ -113,6 +146,21 @@
     <p id="dadosUsuario">Carregando dados do perfil...</p>
   </div>
 </div>
+
+<!--PopUp IMC-->
+
+<div id="popupIMC" class="popup-descricao">
+  <div class="popup-content">
+    <span class="fechar-popup" id="fecharPopupIMC">&times;</span>
+    <h2>Calculadora de IMC</h2>
+    <p>Informe seus dados:</p>
+    <input type="number" id="peso" placeholder="Peso (kg)" style="margin-bottom: 10px; width: 100%;" />
+    <input type="number" id="altura" placeholder="Altura (cm)" style="width: 100%;" />
+    <button id="calcularIMC" style="margin-top: 10px;">Calcular</button>
+    <p id="resultadoIMC" style="margin-top: 15px; font-weight: bold;"></p>
+  </div>
+</div>
+
 
   <script src="fichas.js"></script>
   <script src="logica.js"></script>

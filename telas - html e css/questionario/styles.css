@@ -383,3 +383,86 @@ button:hover {
   margin-left: 12px;
   flex-shrink: 0;
 }
+
+/* Pop Up IMC */
+
+.btn-imc {
+  background-color: transparent;
+  border: 2px solid #d00000;
+  color: #d00000;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-imc:hover {
+  background-color: #d00000;
+  color: white;
+}
+
+/* rodapé */
+
+.rodape {
+  background-color: #f8f8f8;
+  border-top: 2px solid #d00000;
+  padding: 40px 20px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.rodape-conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.coluna-rodape {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.coluna-rodape h3 {
+  color: #d00000;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.coluna-rodape ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coluna-rodape ul li {
+  margin-bottom: 10px;
+}
+
+.coluna-rodape ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.coluna-rodape ul li a:hover {
+  color: #d00000;
+}
+
+.coluna-rodape p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .rodape-conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .coluna-rodape {
+    width: 100%;
+  }
+}

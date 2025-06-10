@@ -230,3 +230,43 @@ popupPerfil.addEventListener("click", (event) => {
   }
 });
 
+/* Pop Up IMC */
+
+const abrirCalculadoraIMC = document.getElementById("abrirCalculadoraIMC");
+const popupIMC = document.getElementById("popupIMC");
+const fecharPopupIMC = document.getElementById("fecharPopupIMC");
+const calcularIMC = document.getElementById("calcularIMC");
+const resultadoIMC = document.getElementById("resultadoIMC");
+
+abrirCalculadoraIMC.addEventListener("click", () => {
+  popupIMC.classList.add("show");
+  resultadoIMC.textContent = "";
+});
+
+fecharPopupIMC.addEventListener("click", () => {
+  popupIMC.classList.remove("show");
+});
+
+popupIMC.addEventListener("click", (e) => {
+  if (e.target === popupIMC) popupIMC.classList.remove("show");
+});
+
+calcularIMC.addEventListener("click", () => {
+  const peso = parseFloat(document.getElementById("peso").value);
+  const altura = parseFloat(document.getElementById("altura").value) / 100;
+
+  if (isNaN(peso) || isNaN(altura) || altura === 0) {
+    resultadoIMC.textContent = "Preencha os campos corretamente.";
+    return;
+  }
+
+  const imc = peso / (altura * altura);
+  let classificacao = "";
+
+  if (imc < 18.5) classificacao = "Abaixo do peso";
+  else if (imc < 25) classificacao = "Peso normal";
+  else if (imc < 30) classificacao = "Sobrepeso";
+  else classificacao = "Obesidade";
+
+  resultadoIMC.innerHTML = `Seu IMC é <strong>${imc.toFixed(1)}</strong> – ${classificacao}`;
+});

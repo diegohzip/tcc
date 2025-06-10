@@ -23,14 +23,30 @@
     <div class="container" id="container">
       <div class="criar">
         <form>
-          <h1>Criar Conta</h1>
-          <input type="text" placeholder="Nome" />
-          <input type="date" placeholder="Data de Nascimentos" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Telefone" />
-          <input type="password" placeholder="Senha" />
-          <button>Criar Conta</button>
-        </form>
+  <h1>Criar Conta</h1>
+  <input type="text" placeholder="Nome" />
+  <input type="date" placeholder="Data de Nascimento" />
+  <input type="email" placeholder="Email" />
+  <input type="tel" placeholder="Telefone" />
+  <input type="password" placeholder="Senha" />
+  
+  <label style="font-size: 12px; margin-top: 10px;">
+    <input type="checkbox" required /> Li e aceito os 
+    <a href="#" id="abrir-termos">Termos de Uso</a>
+  </label>
+  
+  <button>Criar Conta</button>
+</form>
+
+<!-- POP-UP DOS TERMOS DE USO -->
+<div id="popup-termos" class="popup-termos">
+  <div class="popup-conteudo">
+    <div class="popup-texto">O usuário declara estar ciente de que a utilização desta plataforma é de sua inteira responsabilidade. Os treinos disponibilizados têm caráter sugestivo e não substituem o acompanhamento individualizado de profissionais habilitados. A aplicação das fichas de treino deve considerar as condições físicas, de saúde e limitações do usuário, cabendo exclusivamente a este avaliar se está apto à prática dos exercícios indicados. A plataforma não se responsabiliza por qualquer tipo de lesão, agravamento de condições de saúde ou danos físicos decorrentes da execução parcial ou integral dos treinos sugeridos. Ao utilizar esta plataforma, o usuário reconhece que deve buscar orientação médica ou profissional caso apresente qualquer condição de saúde pré-existente, dor, desconforto ou dúvida quanto à execução dos exercícios. O uso dos treinos sem acompanhamento presencial ou remoto de profissionais qualificados é feito por conta e risco do usuário. O conteúdo disponibilizado pode ser alterado, atualizado ou removido a qualquer momento, sem aviso prévio. É proibida a reprodução, distribuição, comercialização ou qualquer outro uso dos treinos fora dos limites pessoais e individuais do usuário. O descumprimento desta cláusula poderá implicar em sanções civis e criminais previstas na legislação brasileira. A plataforma se reserva o direito de suspender ou cancelar o acesso de usuários que violem estes termos ou que utilizem a ferramenta de maneira indevida. Os dados fornecidos pelo usuário durante o uso da plataforma poderão ser armazenados de forma segura, respeitando as normas legais de privacidade e proteção de dados. O simples uso da plataforma implica na aceitação integral, irrestrita e irrevogável de todos os termos aqui descritos.
+</div>
+    <button id="fechar-termos">Ok</button>
+  </div>
+</div>
+
       </div>
       <div class="login">
         <form>
@@ -56,6 +72,7 @@
         </div>
       </div>
     </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
