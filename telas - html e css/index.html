@@ -1,88 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
-    <title>Início</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Training</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div class="cima">
-    <p class="logo">Nexus Training</p>
-    <div class="textos">
-        <a class="cadastro" id="areaUsuario" href="login/login.html">Login</a>
-        <a class="cadastro" id="areaUsuario" href="login/login.html">Cadastro</a>
+  <header class="cabecalho">
+    <div class="conteudo-cabecalho">
+      <div class="logo">Nexus Training</div>
+      <div id="areaUsuario"></div>
     </div>
-</div>
-    <div class="container">
-        <h1 class="titulo">Seu treino ideal está a alguns cliques de distância</h1>
-        <h2 class="subtitulo">Clique no botão abaixo</h2>
-        <a href="questionario/questionario.html"><button class="hidden" id="gerar">Gerar Ficha</button></a>
-        <img src="banner.png" id="foto">
-    </div>
-    <div>
-        <h1 class="descubra">Descubra Seu Objetivo Ideal</h1>
-        <p id="escolher">Escolher seu foco é o primeiro passo para alcançar resultados incríveis. Defina o que você busca e nós criaremos o treino perfeito para você!</p>
-        <div class="cards">
-            <div class="card">
-                <div class="conteudo">
-                    <h1>Hipertrofia</h1>
-                    <p>Se o objetivo é desenvolver músculos maiores e mais definidos, seu plano incluirá treinos de força com cargas progressivas, aliado a técnicas avançadas que otimizam o ganho muscular.</p>
-                    <a href="questionario/questionario.html" class="saiba-mais">Gerar Ficha</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="conteudo">
-                    <h1>Perda de Peso</h1>
-                    <p>Para quem quer emagrecer, o foco será em exercícios que aumentem o gasto calórico e acelerem o metabolismo. Seu plano será equilibrado entre treinos aeróbicos e de resistência para maximizar resultados.</p>
-                    <a href="questionario/questionario.html" class="saiba-mais">Gerar Ficha</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="conteudo">
-                    <h1>Saúde e Bem Estar</h1>
-                    <p>Se você deseja melhorar sua qualidade de vida e manter o corpo em movimento, focar na saúde é o caminho ideal. Exercícios voltados para equilíbrio e resistência farão parte do seu plano.</p>
-                    <a href="questionario/questionario.html" class="saiba-mais">Gerar Ficha</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container2">
-        <h1 class="titulo2">Junte-se à Nossa Comunidade no WhatsApp!</h1>
-        <p class="subtitulo2">Entre para a nossa comunidade e conecte-se com pessoas que compartilham os mesmos objetivos que você! Lá, você encontrará dicas de treino, motivação diária e um espaço para trocar experiências e tirar dúvidas sobre seu progresso.</p>
-        <button class="hidden" id="gerar">Entrar na Comunidade</button>
-    </div>
-<footer class="rodape">
-  <div class="rodape-conteudo">
-    <div class="coluna-rodape">
-      <h3>Navegação</h3>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="questionario/questionario.html">Questionário</a></li>
-        <li><a href="login/login.html">Login</a></li>
-        <li><a href="#">Perguntas Frequentes</a></li>
-      </ul>
-    </div>
+  </header>
 
-    <div class="coluna-rodape">
-      <h3>Informações</h3>
-      <ul>
-        <li><a href="#">Sobre o Projeto</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Política de Privacidade</a></li>
-      </ul>
-    </div>
+  <main>
+    <!-- Banner principal -->
+    <section class="hero">
+      <div class="texto-banner">
+        <h2>Monte sua ficha de treino personalizada!</h2>
+        <p>Responda nosso questionário e receba sua ficha completa agora mesmo, feita com base nas suas metas e realidade.</p>
+      </div>
+      <a href="questionario/questionario.html" class="cta-button">Fazer Questionário</a>
+    </section>
 
-    <div class="coluna-rodape">
-      <h3>Nexus Training</h3>
-      <p>Seu sistema inteligente de fichas de treino personalizadas.</p>
-      <p>&copy; 2025 Nexus Training. Todos os direitos reservados.</p>
+    <!-- Benefícios com carrossel -->
+    <section class="benefits-carousel">
+      <div class="carousel-container">
+        <div class="carousel-card">✅ Fichas personalizadas de acordo com seu perfil</div>
+        <div class="carousel-card">✅ Exercícios com vídeo de tutorial</div>
+        <div class="carousel-card">✅ Sem custos e 100% online</div>
+        <div class="carousel-card">✅ Acesso rápido e fácil via celular</div>
+      </div>
+    </section>
+
+    <!-- Comunidade WhatsApp -->
+    <section class="community">
+      <h3>Entre para nossa comunidade!</h3>
+      <p>Participe do grupo no WhatsApp para tirar dúvidas, trocar experiências e evoluir junto!</p>
+      <a href="https://chat.whatsapp.com/SEU-LINK-AQUI" target="_blank" class="cta-button">Entrar na Comunidade</a>
+    </section>
+  </main>
+
+  <!-- Pop-up do perfil -->
+  <div id="popupPerfil" class="popup-descricao">
+    <div class="popup-content">
+      <span id="fecharPopupPerfil" class="fechar-popup">&times;</span>
+      <p id="dadosUsuario">Carregando dados do perfil...</p>
     </div>
   </div>
-</footer>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <div class="coluna-rodape">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="questionario/questionario.html">Questionário</a></li>
+          <li><a href="login/login.html">Login</a></li>
+          <li><a href="#">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna-rodape">
+        <h3>Informações</h3>
+        <ul>
+          <li><a href="#">Sobre o Projeto</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna-rodape">
+        <h3>Nexus Training</h3>
+        <p>Seu sistema inteligente de fichas de treino personalizadas.</p>
+        <p>&copy; 2025 Nexus Training. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
