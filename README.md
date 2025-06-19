@@ -1,6 +1,6 @@
 TCC
 
-site para visualização: https://diegohzip.github.io/tcc/telas%20-%20html%20e%20css/index.html
+site para visualização: https://diegohzip.github.io/tcc/telas_codigo/public/
 
 Use o site na sua máquina com essas funções no seu terminal:
 
