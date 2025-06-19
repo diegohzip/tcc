@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="painel">
+    <h1>Usuários Cadastrados</h1>
+    <table id="tabelaUsuarios">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dados dinâmicos aqui -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal Visualizar -->
+  <div id="modalVisualizar" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal()">&times;</span>
+      <h2>Detalhes do Usuário</h2>
+      <p><strong>Nome:</strong> <span id="detalheNome"></span></p>
+      <p><strong>Email:</strong> <span id="detalheEmail"></span></p>
+      <p><strong>Telefone:</strong> <span id="detalheTelefone"></span></p>
+      <p><strong>Gênero:</strong> <span id="detalheGenero"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

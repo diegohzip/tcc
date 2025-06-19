@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perguntas Frequentes - Nexus Training</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="conteudo-cabecalho">
+      <a id="logoa" href="../index.html"><div class="logo">Nexus Training</div></a>
+      <div id="areaUsuario"></div>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section>
+      <h1>Sobre o Projeto</h1>
+      <p>O Nexus Training é um sistema inteligente de geração de fichas de treino personalizadas baseado em um questionário simples e intuitivo. Pensado para academias e usuários que desejam uma solução prática, rápida e adaptada às suas condições físicas e objetivos.</p>
+    </section>
+
+    <section>
+      <h1>Contato</h1>
+      <p>Se você tiver dúvidas ou sugestões, entre em contato pelo e-mail: <strong>contato@nexustraining.com</strong></p>
+    </section>
+
+    <section>
+      <h1>Perguntas Frequentes</h1>
+
+      <div class="faq-item">
+        <div class="faq-pergunta"><img src="seta.png">Como o sistema monta a ficha de treino?</div>
+        <div class="faq-resposta">A ficha é montada com base nas suas respostas a um questionário que considera gênero, nível de experiência, disponibilidade, e outras variáveis.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta"><img src="seta.png">Quantos exercícios tem cada ficha?</div>
+        <div class="faq-resposta">Cada dia de treino contém no mínimo 6 exercícios, todos escolhidos de forma estratégica para seu perfil.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta"><img src="seta.png">O sistema funciona sem acesso à internet?</div>
+        <div class="faq-resposta">Não. O site precisa ser acessado online para gerar as fichas corretamente.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta"><img src="seta.png">É necessário pagar pelo uso do sistema?</div>
+        <div class="faq-resposta">Não. O Nexus Training é totalmente gratuito para os usuários.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta"><img src="seta.png">Posso gerar outra ficha se não gostar da primeira?</div>
+        <div class="faq-resposta">Sim, há uma opção para gerar uma nova ficha baseada nas suas respostas anteriores.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta"><img src="seta.png">O sistema leva em conta lesões?</div>
+        <div class="faq-resposta">Sim. Caso você informe que possui uma lesão, o sistema não permitirá a geração da ficha por segurança.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta"><img src="seta.png">As fichas são criadas por inteligência artificial?</div>
+        <div class="faq-resposta">Não. Elas são pré-criadas por especialistas e o sistema apenas seleciona a mais adequada com base nas respostas.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-pergunta"><img src="seta.png">Posso acessar a ficha no celular?</div>
+        <div class="faq-resposta">Sim, o site é responsivo e funciona em celulares, tablets e computadores.</div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <div class="coluna-rodape">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../questionario/questionario.html">Questionário</a></li>
+          <li><a href="../login/login.html">Login</a></li>
+          <li><a href="perguntas.html">Perguntas Frequentes</a></li>
+          <li><a href="admin/seguranca.html">Admin</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna-rodape">
+        <h3>Informações</h3>
+        <ul>
+          <li><a href="perguntas.html">Sobre o Projeto</a></li>
+          <li><a href="perguntas.html">Contato</a></li>
+          <li><a href="#" id="abrir-termos">Termos de Uso</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna-rodape">
+        <h3>Nexus Training</h3>
+        <p>Seu sistema inteligente de fichas de treino personalizadas.</p>
+        <p>&copy; 2025 Nexus Training. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- Pop-up do perfil -->
+<div id="popupPerfil" class="popup-descricao">
+  <div class="popup-content">
+    <span id="fecharPopupPerfil" class="fechar-popup">&times;</span>
+
+    <form id="formPerfil">
+      <label for="nomeUsuario"><strong>Nome:</strong></label>
+      <input type="text" id="nomeUsuario" disabled>
+
+      <label for="emailUsuario"><strong>Email:</strong></label>
+      <input type="email" id="emailUsuario" disabled>
+
+      <label for="idadeUsuario"><strong>Idade:</strong></label>
+      <input type="number" id="idadeUsuario" disabled>
+
+      <label for="generoUsuario"><strong>Gênero:</strong></label>
+      <input type="text" id="generoUsuario" disabled>
+
+      <div class="botoes-perfil">
+        <button type="button" id="btnEditar">Alterar Dados</button>
+        <button type="submit" id="btnSalvar" style="display: none;">Salvar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  <!-- Pop-up dos Termos de Uso -->
+<div id="popup-termos" style="display: none;" class="popup-termos">
+  <div class="popup-termos-conteudo">
+    <span id="fechar-termos" class="fechar-popup">&times;</span>
+    <h2>Termos de Uso</h2>
+    <p>Ao utilizar este site, você concorda com os seguintes termos e condições:
+
+      O usuário declara estar ciente de que a utilização desta plataforma é de sua inteira responsabilidade. Os treinos disponibilizados têm caráter sugestivo e não substituem o acompanhamento individualizado de profissionais habilitados. A aplicação das fichas de treino deve considerar as condições físicas, de saúde e limitações do usuário, cabendo exclusivamente a este avaliar se está apto à prática dos exercícios indicados. A plataforma não se responsabiliza por qualquer tipo de lesão, agravamento de condições de saúde ou danos físicos decorrentes da execução parcial ou integral dos treinos sugeridos. Ao utilizar esta plataforma, o usuário reconhece que deve buscar orientação médica ou profissional caso apresente qualquer condição de saúde pré-existente, dor, desconforto ou dúvida quanto à execução dos exercícios. O uso dos treinos sem acompanhamento presencial ou remoto de profissionais qualificados é feito por conta e risco do usuário. O conteúdo disponibilizado pode ser alterado, atualizado ou removido a qualquer momento, sem aviso prévio. É proibida a reprodução, distribuição, comercialização ou qualquer outro uso dos treinos fora dos limites pessoais e individuais do usuário. O descumprimento desta cláusula poderá implicar em sanções civis e criminais previstas na legislação brasileira. A plataforma se reserva o direito de suspender ou cancelar o acesso de usuários que violem estes termos ou que utilizem a ferramenta de maneira indevida. Os dados fornecidos pelo usuário durante o uso da plataforma poderão ser armazenados de forma segura, respeitando as normas legais de privacidade e proteção de dados. O simples uso da plataforma implica na aceitação integral, irrestrita e irrevogável de todos os termos aqui descritos.
+    </p>
+    <button id="botao-ok-termos">Ok</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

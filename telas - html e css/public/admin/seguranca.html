@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Painel de Acesso - Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="login-container" role="main" aria-labelledby="login-title">
+    <h2 id="login-title">Painel de Acesso</h2>
+    <form id="loginForm" action="/seguranca" method="POST" novalidate>
+      <label for="username">Usuário</label><br/><br/>
+      <input id="username" name="username" placeholder="Usuário" autocomplete="username" required />
+      <label for="password">Senha</label><br/><br/>
+      <input id="password" name="password" type="password" placeholder="Senha" autocomplete="current-password" required />
+      <button id="submitBtn" type="submit" disabled>Entrar</button>
+      <div id="errorMsg" class="error-message" role="alert"></div>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

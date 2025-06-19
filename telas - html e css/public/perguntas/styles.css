@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+      margin: 0;
+      font-family: 'poppins';
+      background-color: white;
+      color: #333;
+}
+
+.conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    color: #d00000;
+}
+
+.faq-pergunta {
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    padding-left: 24px;
+    color: #d00000;
+}
+
+.faq-pergunta img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0.5rem;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.faq-pergunta.ativa img {
+    transform: rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+
+}
+
+.faq-resposta {
+    display: none;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.faq-pergunta.ativa + .faq-resposta {
+    display: block;
+}
+
+
+.faq-item {
+    background-color: #d00000;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.faq-pergunta {
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  padding: 1.2rem 1rem 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  transition: padding 0.4s ease;
+  color: white;
+}
+
+.faq-resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  color: white;
+  transition: 2s;
+  padding: 0 1rem;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.4s ease;
+}
+
+
+.faq-pergunta.ativa + .faq-resposta {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: 2s;
+  opacity: 1;
+}
+
+    /* rodapé */
+
+.rodape {
+  background-color: #f8f8f8;
+  border-top: 2px solid #d00000;
+  padding: 40px 20px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.rodape-conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.coluna-rodape {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.coluna-rodape h3 {
+  color: #d00000;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.coluna-rodape ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coluna-rodape ul li {
+  margin-bottom: 10px;
+}
+
+.coluna-rodape ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.coluna-rodape ul li a:hover {
+  color: #d00000;
+}
+
+.coluna-rodape p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* cabeçalho */
+
+.cabecalho {
+  background-color: #d00000;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.conteudo-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+#logoa {
+  text-decoration: none;
+  color: white;
+}
+
+/* area do usuario */
+
+#areaUsuario span, #areaUsuario a {
+  cursor: pointer;
+  background-color: white;
+  color: #d00000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  transition: 1s;
+}
+
+#areaUsuario span:hover, #areaUsuario a:hover {
+  background-color: #d00000;
+  color: white;
+  transition: 1s;
+  border: solid 1px white;
+}
+
+.popup-descricao {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center; align-items: center;
+  z-index: 9999;
+  color: #d00000;
+}
+
+.popup-descricao.show {
+  display: flex;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.fechar-popup {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#popupPerfil input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 6px;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #d00000;
+  border-radius: 6px;
+  font-family: 'poppins';
+}
+
+.botoes-perfil {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  font-family: 'poppins';
+}
+
+.botoes-perfil button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #d00000;
+  color: white;
+  transition: 0.3s;
+  font-family: 'poppins';
+
+}
+
+.botoes-perfil button:hover {
+  background-color: white;
+  color: #d00000;
+  border: solid 1px #d00000;
+}
+
+
+/* termos de uso */
+
+.popup-termos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-termos-conteudo {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  max-height: 500px;
+  overflow: auto;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-termos-conteudo h2 {
+  margin-top: 0;
+}
+
+.popup-termos-conteudo .fechar-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#botao-ok-termos {
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #d00000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

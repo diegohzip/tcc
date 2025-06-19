@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #d00000, #e82424);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  color: #d00000;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #d00000;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: white;
+  color: #d00000;
+  border: solid 1px #d00000;
+}
+
+.mensagem-erro {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.login-container label {
+  margin-bottom: 4px;
+}
+
+/* Exemplo básico para feedback */
+    .error-message {
+      color: #d33;
+      margin-top: 10px;
+      font-weight: 600;
+      display: none;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }

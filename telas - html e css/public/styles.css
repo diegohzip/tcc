@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppins';
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #d00000;
+}
+
+.cabecalho {
+  background-color: #d00000;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.conteudo-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* perfil */
+
+#areaUsuario span, #areaUsuario a {
+  cursor: pointer;
+  background-color: white;
+  color: #d00000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  transition: 1s;
+}
+
+#areaUsuario span:hover, #areaUsuario a:hover {
+  background-color: #d00000;
+  color: white;
+  transition: 1s;
+  border: solid 1px white;
+}
+
+.popup-descricao {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center; align-items: center;
+  z-index: 9999;
+  color: #d00000;
+}
+
+.popup-descricao.show {
+  display: flex;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.fechar-popup {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#popupPerfil input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 6px;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #d00000;
+  border-radius: 6px;
+  font-family: 'poppins';
+}
+
+.botoes-perfil {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  font-family: 'poppins';
+}
+
+.botoes-perfil button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #d00000;
+  color: white;
+  transition: 0.3s;
+  font-family: 'poppins';
+
+}
+
+.botoes-perfil button:hover {
+  background-color: white;
+  color: #d00000;
+  border: solid 1px #d00000;
+}
+
+/* resto */
+
+nav .btn {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #d00000;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav .btn:hover {
+  background-color: #d00000;
+  color: white;
+}
+
+main {
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  background: url('treino.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 6rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 1px 1px 10px #d00000;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0px 0px 2px #ff0000;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #d000008a;
+  display: inline-block;
+  font-weight: bold;
+  border: #d00000 solid 4px;
+  text-shadow: 0px 0px 2px #ff0000;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: #ffffff;
+  color: #d00000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 1.5rem;
+}
+
+.cta-button:hover {
+  background-color: #d00000;
+  color: white;
+  border: solid 1px white;
+}
+
+.benefits-carousel {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.carousel-container {
+  display: inline-flex;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.carousel-card {
+  display: inline-block;
+  background-color: #fff;
+  padding: 1.5rem;
+  min-width: 250px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  white-space: normal;
+}
+
+.community {
+  background-color: #d00000;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+}
+
+/* rodapé */
+
+.rodape {
+  background-color: #f8f8f8;
+  border-top: 2px solid #d00000;
+  padding: 40px 20px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.rodape-conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.coluna-rodape {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.coluna-rodape h3 {
+  color: #d00000;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.coluna-rodape ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coluna-rodape ul li {
+  margin-bottom: 10px;
+}
+
+.coluna-rodape ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.coluna-rodape ul li a:hover {
+  color: #d00000;
+}
+
+.coluna-rodape p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* termos de uso */
+
+.popup-termos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-termos-conteudo {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  max-height: 500px;
+  overflow: auto;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-termos-conteudo h2 {
+  margin-top: 0;
+}
+
+.popup-termos-conteudo .fechar-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#botao-ok-termos {
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #d00000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .rodape-conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .coluna-rodape {
+    width: 100%;
+  }
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .benefits ul {
+    font-size: 1rem;
+  }
+
+  nav .btn {
+    margin: 0.5rem 0 0 0;
+  }
+}
+
