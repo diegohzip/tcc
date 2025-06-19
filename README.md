@@ -7,6 +7,7 @@ Use o site na sua máquina com essas funções no seu terminal:
 **1. Clone o repositório
 **
 git clone https://github.com/diegohzip/tcc.git
+
 cd tcc
 
 **2. Instale as Dependências
@@ -15,6 +16,7 @@ npm install package.json express body-parser mysql2 express-session
 
 **3. Instale o banco de dados a seguir:
 **
+
 CREATE DATABASE sistema;
 USE sistema;
 
