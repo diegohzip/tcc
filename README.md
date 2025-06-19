@@ -4,17 +4,17 @@ site para visualização: https://diegohzip.github.io/tcc/telas%20-%20html%20e%2
 
 Use o site na sua máquina com essas funções no seu terminal:
 
-1. Clone o repositório
-
+**1. Clone o repositório
+**
 git clone https://github.com/diegohzip/tcc.git
 cd tcc
 
-2. Instale as Dependências
+**2. Instale as Dependências
+**
+npm install package.json express body-parser mysql2 express-session
 
-npm install
-
-3. Instale o banco de dados a seguir:
-
+**3. Instale o banco de dados a seguir:
+**
 CREATE DATABASE sistema;
 USE sistema;
 
@@ -28,10 +28,10 @@ CREATE TABLE usuarios (
   senha VARCHAR(100)
 );
 
-4. Atualize as credenciais no server.js com suas informações
-
-4.1 Substitua isso
-
+**4. Atualize as credenciais no server.js com suas informações
+**
+**4.1 Substitua isso
+**
 // Configurar conexão MySQL (mantendo seu código)
 const db = mysql.createConnection({
   host: 'localhost',
@@ -40,8 +40,8 @@ const db = mysql.createConnection({
   database: 'sistema'
 });
 
-4.2 Pelo seu user e sua senha
-
+**4.2 Pelo seu user e sua senha
+**
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'seu_usuario',
@@ -49,10 +49,10 @@ const connection = mysql.createConnection({
   database: 'sistema'
 });
 
-5. Inicie o servidor
-
+**5. Inicie o servidor
+**
 node server.js
 
-6. Acesse o servidor
-
+**6. Acesse o servidor
+**
 Entre em localhost:3000 no seu navegador
