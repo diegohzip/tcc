@@ -9,7 +9,7 @@ Use o site na sua máquina com essas funções no seu terminal:
 git clone https://github.com/diegohzip/tcc.git
 
 cd tcc
-
+cd telas_codigo
 **2. Instale as Dependências
 **
 npm install package.json express body-parser mysql2 express-session
